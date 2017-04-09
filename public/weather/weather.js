@@ -72,7 +72,7 @@
 
     function setBacgroundAndIcon(iconString){ 
         var imgUrl=backgroundLinksReference[iconString];
-        $weatherIcon.attr('src',"http://openweathermap.org/img/w/"+iconString+".png");
+        $weatherIcon.attr('src',"https://openweathermap.org/img/w/"+iconString+".png");
         $body.fadeOut("slow", function(){
             $body.css("backgroundImage",'url('+imgUrl+')');//if icon string == give link to background
             $body.fadeIn("slow");
@@ -86,7 +86,7 @@
     function getWeatherByCoords(){
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position) {
-                weatherUrl = "http://api.openweathermap.org/data/2.5/weather?lat="+position.coords.latitude + "&lon=" + position.coords.longitude+"&appid=bd3e7e4dfbdbeec95be9caae99588042"; 
+                weatherUrl = "https://api.openweathermap.org/data/2.5/weather?lat="+position.coords.latitude + "&lon=" + position.coords.longitude+"&appid=bd3e7e4dfbdbeec95be9caae99588042"; 
                 getWeather();         
             }); 
         }else{ //TO DO
@@ -135,7 +135,7 @@ $(document).ready(function() {
     });
     $('#searchBtn').click(function(){
         currentTempType ="kelvin";
-        weatherUrl = "http://api.openweathermap.org/data/2.5/weather?q="+$searchInput.val()+"&appid=bd3e7e4dfbdbeec95be9caae99588042"; 
+        weatherUrl = "https://api.openweathermap.org/data/2.5/weather?q="+$searchInput.val()+"&appid=bd3e7e4dfbdbeec95be9caae99588042"; 
         getWeather();
         $searchInput.val("");
     });

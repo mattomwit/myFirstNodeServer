@@ -1,0 +1,13 @@
+.jumbotron{
+  margin-top:50px;
+}
+.well:nth-of-type(even){
+ background : lightgrey;
+}
+h1, h2, h3{
+  text-shadow: 2px 2px 3px grey;
+}
+.well, .btn{
+  margin-top:20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

@@ -1,0 +1,21 @@
+body{
+background: url("https://farscapedevelopment.files.wordpress.com/2012/06/motivation.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index:-2;
+}
+h{
+  text-align: center;
+}
+h1{
+  color:blue;
+}
+
+.jumbotron{
+  color:black;
+  opacity: 0.9;
+  filter: alpha(opacity=90); /* For IE8 and earlier */
+  margin-top:50px;
+}
