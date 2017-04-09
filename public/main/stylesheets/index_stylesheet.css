@@ -1,0 +1,162 @@
+/*delete scroll bar on the bottom*/
+html{
+    background: url(../Images/Index/background_TNsmall.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index:-2;
+}
+
+body{    
+  background-color: transparent;
+  width:100%;
+}
+
+#fog{
+	background: none;
+	font-family: Androgyne;
+	background-image: url(../Images/Index/c11.png), url(../Images/Index/c22.png), url(../Images/Index/c33.png),url(../Images/Index/c11.png), url(../Images/Index/c22.png), url(../Images/Index/c33.png),url(../Images/Index/c22.png), url(../Images/Index/c33.png);
+  height: 100%;
+	left: 0;
+  top: 0;
+	position: absolute;
+	width: 100%;
+	z-index:-1;
+	-moz-animation: fog 40s linear infinite;
+	animation: fog 40s linear infinite;
+}
+
+#logoHolder{
+  z-index: 999;
+  margin-left:100%;
+  position: absolute;
+}
+
+#logo{
+  float:left;
+  border-radius: 40%;
+  margin-left:-6em;
+  width:4em;
+  height: 4em;
+  background: url(../Images/Index/transparent.jpg) no-repeat center center;
+  background-size:contain;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  animation: logoAnimation 3s linear infinite;
+}
+
+.jumbotron{
+  margin-top:90px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+h1{
+  text-shadow: 2px 2px 2px grey;
+}
+
+footer{
+  text-shadow: 1px 1px 2px white;
+}
+
+.btn{
+  transition: all .2s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover{
+  transform: scale(1.2);
+}
+
+#btn1:hover{
+  -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+#btn2:hover{
+  -ms-transform: translate(3px, -5px); /* IE 9 */
+  -webkit-transform: translate(3px, -5px); /* Safari */
+  transform: translate(3px, -5px);
+  box-shadow: -6px 10px 5px grey;
+}
+
+#btn3:hover{
+  color: black;
+  text-shadow: 0px 0px 5px white;
+}
+
+#btn4:hover{
+  border-color:white;
+  background-color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+#btn5:hover{
+  font-size:120%;
+  color: #286090;
+  background-color: white;
+  transform-origin: 0% 0%;
+  transform: rotate(10deg);
+  -ms-transform: rotate(10deg); /* IE 9 */
+    -ms-transform-origin: 0% 0%; /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+    -webkit-transform-origin: 0% 0%; /* Chrome, Safari, Opera */    
+}
+
+/* animation usage example
+#start{
+  visibility: visible;
+  background-color: green;
+  animation: startAnimation 4s linear forwards;
+}
+
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}  
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+*/
+@keyframes startAnimation{
+  0%{width:10em; height: 10em;margin-left:0em;margin-top:0em;}
+  100%{width:2em; height: 2em;margin-left:4em;margin-top:4em;}
+}
+
+@keyframes logoAnimation{
+  0%{width:4em;height: 4em;margin-left:-6em;margin-top:1em;border-radius:50%}
+  50%{width:5em;height: 5em;margin-left:-6.5em;margin-top:0.5em;border-radius:10%}
+  100%{width:4em;height: 4em;margin-left:-6em;margin-top:1em;border-radius:50%}
+}
+
+@keyframes fog {
+  0% {background-position: 0% 100%, 100% 0%, 0% 0%, 100% 100%, -100% 0%,  0% -100%, 100% 100%, 100% 100%;}
+  100% {background-position: 100% 0%, 0% 100%, 100% 100%, 0% 0%, 0% -100%,  -100% 0%, 100% 0%, 0% 100%;}
+}
+
+@-moz-keyframes fog {
+  0% {background-position: 0% 100%, 100% 0%, 0% 0%, 100% 100%, -100% 0%,  0% -100%, 100% 100%, 100% 100%;}
+  100% {background-position: 100% 0%, 0% 100%, 100% 100%, 0% 0%, 0% -100%,  -100% 0%, 100% 0%, 0% 100%;}
+}
+
+@-ms-keyframes fog {
+  0% {background-position: 0% 100%, 100% 0%, 0% 0%, 100% 100%, -100% 0%,  0% -100%, 100% 100%, 100% 100%;}
+  100% {background-position: 100% 0%, 0% 100%, 100% 100%, 0% 0%, 0% -100%,  -100% 0%, 100% 0%, 0% 100%;}
+}	
+
+@-webkit-keyframes fog {
+  0% {background-position: 0% 100%, 100% 0%, 0% 0%, 100% 100%, -100% 0%,  0% -100%, 100% 100%, 100% 100%;}
+  100% {background-position: 100% 0%, 0% 100%, 100% 100%, 0% 0%, 0% -100%,  -100% 0%, 100% 0%, 0% 100%;}
+}
+
+@-ms-keyframes fog {
+0% {background-position: 0% 100%, 100% 0%, 0% 0%, 100% 100%, -100% 0%,  0% -100%, 100% 100%, 100% 100%;}
+  100% {background-position: 100% 0%, 0% 100%, 100% 100%, 0% 0%, 0% -100%,  -100% 0%, 100% 0%, 0% 100%;}
+}	

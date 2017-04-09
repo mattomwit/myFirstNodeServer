@@ -1,0 +1,29 @@
+body{
+background: url("http://weknowyourdreams.com/images/cloud/cloud-06.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index:-2;
+}
+
+#dataHolder{
+  visibility: hidden;
+}
+
+.jumbotron, .sidebar-offcanvas{  
+  color:black;
+  opacity: 0.9;
+  filter: alpha(opacity=90); /* For IE8 and earlier */
+  margin-top:50px;
+}
+
+#searchInput {
+    width: 70%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#searchInput:focus {
+    width: 100%;
+}
